@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LeBron James</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-image: url('images/LeGoat.webp'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        padding: 40px;
+        flex-direction: column;
+    }
+
+    .card {
+        background-color: #b300ff;
+        border-radius: 16px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        padding: 30px;
+        max-width: 800px;
+        width: 100%;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        color: #f9d342;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 400;
+        margin-bottom: 30px;
+        color: #552583;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    #userAnswer {
+        font-size: 1.2em;
+        color: #FDB927;
+        margin-top: 10px;
+    }
+
+    .jersey-img {
+        width: 200px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+
+    .jersey-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px #f9d342;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #FDB927;
+        color: #1e1e2f;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #e3b123;
+    }
+
+    .tutorial-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #552583;
+        color: #FDB927;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        margin-top: 10px;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .tutorial-link:hover {
+        background-color: #6d35a5;
+        transform: scale(1.05);
+    }
+
+    #typewriter {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #f9d342;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<img id="jerseyImage" class="jersey-img" src="images/jersey of goat.webp" alt="Jersey Image">
+
+<div class="card">
+    <div id="typewriter"></div> 
+    <h1>LeBron James</h1>
+    <h2>The King of Basketball</h2>
+
+    LeBron James is one of the greatest basketball players in the history of the sport.<br>
+    Born on December 30, 1984, in Akron, Ohio, he was raised by his mother, Gloria James, who supported him through tough times.<br>
+    From a young age, LeBron showed incredible talent on the basketball court, and by high school, he had already become a national sensation.<br>
+    He attended St. Vincent-St. Mary High School, where his games were often nationally televised, earning him the nickname "The Chosen One."<br><br>
+
+    LeBron was drafted as the first overall pick in the 2003 NBA Draft by the Cleveland Cavaliers.<br>
+    He made an immediate impact in the league, winning Rookie of the Year and quickly becoming the face of the franchise.<br>
+    Although he carried the Cavaliers to the NBA Finals in 2007, the team struggled to win a championship.<br>
+    In 2010, LeBron made a controversial move to join the Miami Heat, forming a superteam with Dwyane Wade and Chris Bosh.<br><br>
+
+    During his time with the Miami Heat, LeBron won his first two NBA championships.<br>
+    He captured titles in 2012 and 2013 and earned Finals MVP both times.<br>
+    His time in Miami helped him mature as a player and a leader.<br>
+    After four seasons, he returned to Cleveland in 2014 with a promise to bring a championship to his hometown.<br>
+    In 2016, he fulfilled that promise by leading the Cavaliers to a historic comeback victory over the Golden State Warriors, bringing the city its first major sports title in over 50 years.<br><br>
+
+    In 2018, LeBron signed with the Los Angeles Lakers, continuing to prove his greatness.<br>
+    Despite challenges in his first season, he led the Lakers to an NBA title in 2020, his fourth championship overall.<br>
+    His ability to dominate the game even in his late 30s has amazed fans and analysts alike.<br>
+    Known for his versatility, high basketball IQ, and physical strength, LeBron has remained one of the most dominant players across multiple decades.<br><br>
+
+    Off the court, LeBron is a businessman, philanthropist, and activist.<br>
+    He opened the "I PROMISE School" in Akron to support at-risk children and has been an outspoken advocate for social justice.<br>
+    Through his media company, SpringHill, he also produces films and TV shows that highlight diverse voices.<br>
+    LeBron James is not only a basketball icon but a cultural figure whose influence reaches far beyond sports.<br><br>
+
+    <a href="https://www.youtube.com/watch?v=hdI2bqOjy3c" target="_blank" class="tutorial-link">
+        My JavaScript Tutotial
+    </a>
+    <br><br>
+
+    <button onclick="changeImage()">Change Jersey Image</button>
+    <button onclick="askFavoriteTeam()">What's Your Favorite Team?</button>
+    <button onclick="askFavoritePlayer()">Who's Your Favorite Player?</button>
+
+    <div id="userAnswer"></div>
+</div>
+
+<script>
+    function changeImage() {
+        const img = document.getElementById("jerseyImage");
+        img.src = "images/jersey of goat2.jpg";
+        img.style.border = "4px solid #FDB927"; 
+        img.style.backgroundColor = "#2e2e3e";   
+        img.style.padding = "5px";               
+        console.log("Jersey swap");
+    }
+
+    function askFavoriteTeam() {
+        const team = prompt("What's your favorite NBA team?");
+        document.getElementById("userAnswer").innerText = "You like: " + team;
+        console.log("User answered: " + team);
+    }
+
+    function askFavoritePlayer() {
+        const player = prompt("Who's your favorite NBA player?");
+        document.getElementById("userAnswer").innerText = "You like: " + player;
+        console.log("User answered: " + player);
+    }
+
+    
+    const typewriterText = "The Chosen One";
+    let i = 0;
+    const speed = 100;
+
+    function typeWriter() {
+        if (i < typewriterText.length) {
+            document.getElementById("typewriter").innerHTML += typewriterText.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+    window.onload = typeWriter;
+</script>
+</body>
+</html>

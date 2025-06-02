@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLibs</title>
+</head>
+<body>
+    <h1>Le Story</h1>
+    <div class="story" id="madLibStory"></div>
+
+    <script>
+        
+        let name = prompt("Enter a name:");
+        let food = prompt("Enter a food:");
+        let verb = prompt("Enter a verb:");
+        let place = prompt("Enter a place:");
+        let emotion = prompt("Enter an emotion:");
+        let adjective = prompt("Enter an adjective:");
+        let animal = prompt("Enter a animal");
+        let adjective2 = prompt("Enter a second adjective:");
+        let verb2 = prompt("Enter a second verb:");
+        let timeOfDay = prompt("Enter a time of day:");
+        let place2 = prompt("Enter a second place:");
+        let food2 = prompt("Enter a second food:");
+        let emotion2 = prompt("Enter a second emotion:");
+        let verb3 = prompt("Enter a third verb:");
+        let chose = prompt("Enter either got OR never got:");
+        
+        
+        let paragraph1 = `One day, ${name} was eating ${food} at ${place} when suddenly, they felt ${emotion}.`;
+        let paragraph2 = `Without warning, ${name} decided to ${verb} ${adjective}ly toward the nearest exit!`;
+        let paragraph3 = `Suddenly he saw a ${animal} so ${adjective2} he ${verb2} untill the ${timeOfDay}`;
+        let paragraph4 = `Then they went on a date at ${place2} and ${name} ordered ${food} and ${animal} felt so ${emotion2} they ${verb3} and ${name} ${chose} a second date`;
+        
+        let story = `${paragraph1}\n\n${paragraph2}\n\n${paragraph3}\n\n${paragraph4}`;
+        
+        
+        document.getElementById('madLibStory').innerHTML = 
+            `<p>${paragraph1}</p><p>${paragraph2}</p><p>${paragraph3}</p><p>${paragraph4}</p>`;
+        
+        
+        alert("Ladies and Gents, the MadLib:\n\n" + story);
+
+        
+    
+        
+    </script>
+    <!--Jason thought it was funny
+    Lizzy thought it was good, nice choice of sentences
+    Blossom thinks that the story is good. Verynice.
+    -->
+</body>
+</html>

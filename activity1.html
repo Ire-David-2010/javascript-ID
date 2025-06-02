@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY First JS Page</title>
+    <script>
+        window.alert("welcome brotato");
+        document.write("OKC and Knicks in finals");
+        console.log("OKC in 5");
+
+        function changeText(){
+            document.getElementById("myParagraph").innerHTML = "good boyyyyyy";
+        }
+
+        function changeOtherText(){
+            document.getElementById("myOtherParagraph").innerHTML = "Real.";
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript is Cool</h1>
+    <p>Open the console to see more...</p>
+    <p id="myParagraph">This text will change when you click the button.</p>
+
+    <button onclick="changeText()">Click Me Bum</button>
+
+    <p id="myOtherParagraph">This OTHER text will change when you click the OTHER button.</p>
+
+    <button onclick="changeOtherText()">I Love Women</button>
+
+    <button onclick="document.getElementById('myImage').src='images/LeGoat.webp'">Turn off the light</button>
+
+<img id="myImage" src="images/LeGoat.webp" style="width:100px;height:100px;">
+
+<button onclick="document.getElementById('myImage').src='images/LeSunshine.jpg'">Turn on the light</button>
+</body>
+</html>`
